@@ -8,3 +8,11 @@ export const compliments: string[] = [
     "I love your laugh!",
     "Someone's day is better because of you!"
 ]
+
+export const generateText: string[] = [
+  "Tell me something nice!",
+  "Tell me something nice!",
+  "One more, please!",
+  "One more, please!",
+  "Another one, please!"
+]
