@@ -1,5 +1,5 @@
 import { useState } from 'react'
-//import './App.css'
+import './App.css'
 import { compliments } from './compliments'
 
 
@@ -16,9 +16,9 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-        <div className="bg-white shadow-md p-10 text-center max-w-sm rounded-xl "><h1>{compliment}</h1></div>
-        <button onClick={generateCompliment}>Generate New Compliment</button>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-indigo-950">
+        <div className="bg-white shadow-md p-10 text-center max-w-2xl rounded-xl "><h1>{compliment}</h1></div>
+        <div className="bg-amber-300 p-6 m-4 rounded-xl"><button  onClick={generateCompliment}><p className="text-xl font-bold">Generate New Compliment</p></button></div>
       </div>     
     </>
 
