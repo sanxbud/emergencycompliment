@@ -20,7 +20,7 @@ function App() {
     }
 
     const submitCompliment =()=>{
-    let x =2;
+    
   }
 
   return (
