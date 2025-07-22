@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-caveat: "Caveat", cursive;
+}
+
 @keyframes bounce-up {
   0% {
     transform: translateY(0);
-    opacity: 1:;
+    opacity: 1;
   }
   50% {
     transform: translateY(-25%);
@@ -12,4 +19,5 @@
     opacity: 1;
   }
 }
+
 

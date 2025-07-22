@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { compliments, generateText } from './compliments'
+import lilguy from './assets/ugotthislilguy-indigo-950.png'
+import lilguylight from './assets/ugotthislilguy.png'
 
 
 
@@ -25,14 +27,19 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-amber-100">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-amber-100 dark:bg-indigo-950">
+        <header className="flex flex-col items-center pb-20">
+          <img src={lilguy} className="w-40 mb-2 block dark:hidden"/>
+          <img src={lilguylight} className="w-40 mb-2 hidden dark:block"/>
+          <h1 className={'font-["Caveat"] text-3xl text-indigo-950 dark:text-amber-100'}>Emergency Compliment!</h1>
+        </header>
         <div key={compliment} className="
-          bg-white shadow-xl p-10 flex items-center justify-center  text-center max-w-2xl rounded-3xl min-h-60  
+          bg-white shadow-xl p-10 flex items-center justify-center text-center max-w-2xl rounded-3xl min-h-65 min-w-150 
           animate-[bounce-up_0.4s_ease-out]" 
           >
-          <h1 className="text-[clamp(2rem,3vw,2.33rem)]">{compliment}</h1></div>
+          <h1 className="text-center text-[clamp(2rem,3vw,2.33rem)]">{compliment}</h1></div>
         <button className="bg-indigo-200 p-6 m-4 shadow-md rounded-xl hover:bg-indigo-300 hover:scale-105 transform transition duration-200 ease-in-out cursor-pointer" onClick={generateCompliment}><p className="text-xl font-bold">{buttonText}</p></button>
-        <div className=""><button className="cursor-pointer m-2 rounded-xl hover:scale-115 transform transition duration-200 ease-in-out" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950">Suggest a compliment!</p></button></div>
+        <div className=""><button className="cursor-pointer m-2 rounded-xl hover:scale-115 transform transition duration-200 ease-in-out" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-amber-100">Suggest a compliment!</p></button></div>
 
       </div>    
       <footer className="text-center text-amber-100 bg-indigo-950 font-bold text-sm py-4">made with ♡ by sanjay budhia</footer>
