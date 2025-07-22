@@ -42,7 +42,15 @@ function App() {
         <div className=""><button className="cursor-pointer m-2 rounded-xl hover:scale-115 transform transition duration-200 ease-in-out" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-amber-100 dark:hover:text-amber-200">Suggest a compliment!</p></button></div>
 
       </div>    
-      <footer className="text-center text-amber-100 bg-indigo-950 font-bold text-sm py-4 dark:bg-amber-100 dark:text-indigo-950 ">made with ♡ by sanjay budhia</footer>
+     
+     <footer>
+       <a href="https://sanjaybudhia.dev" 
+          className="block text-center text-amber-100 bg-indigo-950 font-bold text-sm py-4 dark:bg-amber-100 dark:text-indigo-950 dark:hover:bg-amber-200 hover:bg-indigo-900 transition">
+         <span className="dark:hidden">made with ♡ by sanjay budhia</span>
+         <span className="hidden dark:inline">made with ♥ by sanjay budhia</span>
+       </a>
+     </footer>
+
     </>
 
   )
