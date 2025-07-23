@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import { compliments, generateText } from './compliments'
 import lilguy from './assets/ugotthislilguy-indigo-950.png'
-import lilguylight from './assets/ugotthislilguy.png'
 
 
 
