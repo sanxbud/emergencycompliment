@@ -32,12 +32,12 @@ function App() {
           <h1 className={'font-["Caveat"] text-3xl md:text-5xl text-indigo-950 dark:text-indigo-950'}>Emergency Compliment!</h1>
         </header>
         <div key={compliment} className="
-          bg-white shadow-xl p-10 px-4 md:p-10 flex items-center justify-center text-center min-w-90 sm:max-w-90 md:max-w-2xl rounded-3xl min-h-40 md:min-h-55 md:min-w-120 lg:min-h-64 lg:min-w-150 mx-1 
+          bg-white shadow-xl p-10 px-4 md:p-10 flex items-center justify-center text-center w-85 sm:max-w-90 md:max-w-2xl rounded-3xl min-h-40 md:min-h-55 md:min-w-120 lg:min-h-64 lg:min-w-150 mx-1 
           animate-[bounce-up_0.4s_ease-out]" 
           >
           <h1 className="text-xl md:text-[clamp(2rem,3vw,2.33rem)]">{compliment}</h1></div>
         <button className="bg-indigo-200 dark:bg-indigo-200 p-6 m-4 shadow-md rounded-xl hover:bg-indigo-300 dark:hover:bg-indigo-300 hover:scale-110 transform transition duration-200 ease-in-out cursor-pointer" onClick={generateCompliment}><p className="text-base md:text-xl font-bold">{buttonText}</p></button>
-        <div className="hidden"><button className="hidden cursor-pointer m-2 rounded-xl hover:scale-110 transform transition duration-200 ease-in-out hidden" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-indigo-950 dark:hover:text-indigo-850 hidden">Suggest a compliment!</p></button></div>
+        <div className="hidden"><button className="cursor-pointer m-2 rounded-xl hover:scale-110 transform transition duration-200 ease-in-out hidden" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-indigo-950 dark:hover:text-indigo-850 hidden">Suggest a compliment!</p></button></div>
 
       </div>    
      
