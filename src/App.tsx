@@ -43,7 +43,7 @@ function App() {
      
      <footer>
        <a href="https://sanjaybudhia.dev" 
-          className="block text-center text-amber-100 bg-indigo-950 font-bold text-sx md:text-sm py-4 dark:bg-indigo-950 dark:text-amber-100 dark:hover:bg-indigo-900 hover:bg-indigo-900 transition">
+          className="block text-center text-amber-100 bg-indigo-950 md:font-bold text-sx md:text-sm py-4 dark:bg-indigo-950 dark:text-amber-100 dark:hover:bg-indigo-900 hover:bg-indigo-900 transition">
          <span className="">made with ♡ by sanjay budhia</span>
          <span className="hidden">made with ♥ by sanjay budhia</span>
        </a>
