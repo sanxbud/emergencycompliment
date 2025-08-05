@@ -20,9 +20,26 @@ function App() {
         
     }
 
-    const submitCompliment =()=>{
-    
-  }
+   const submitCompliment = async () => {
+      const suggestion = prompt("Suggest a new compliment!");
+      if (!suggestion) return;
+
+      const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSe0EzRBMmoSKkIxFzi3PECuBcgjlrmRZNTiUpNkMl_Np9jh5Q/formResponse';
+      const formData = new FormData();
+      formData.append('entry.893118750', suggestion);
+
+      try {
+        await fetch(formURL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData,
+        });
+        alert("Thank you for the suggestion! I hope you have a great day :)");
+      } catch (err) {
+        console.error("Submission failed", err);
+      }
+    };
+ 
 
   return (
     <>
@@ -37,8 +54,9 @@ function App() {
           >
           <h1 className="text-xl md:text-[clamp(2rem,3vw,2.33rem)]">{compliment}</h1></div>
         <button className="bg-indigo-200 dark:bg-indigo-200 p-6 m-4 shadow-md rounded-xl hover:bg-indigo-300 dark:hover:bg-indigo-300 hover:scale-110 transform transition duration-200 ease-in-out cursor-pointer" onClick={generateCompliment}><p className="text-base md:text-xl font-bold">{buttonText}</p></button>
-        <div className="hidden"><button className="cursor-pointer m-2 rounded-xl hover:scale-110 transform transition duration-200 ease-in-out hidden" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-indigo-950 dark:hover:text-indigo-850 hidden">Suggest a compliment!</p></button></div>
+        <button className="cursor-pointer m-2 rounded-xl hover:scale-110 transform transition duration-200 ease-in-out" onClick={submitCompliment}><p className="font-bold text-sm text-indigo-950 dark:text-indigo-950 dark:hover:text-indigo-850">Suggest a compliment!</p></button>     
 
+ 
       </div>    
      
      <footer>
