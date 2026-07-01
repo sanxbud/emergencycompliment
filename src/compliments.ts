@@ -82,8 +82,8 @@ export const compliments: string[] = [
     "You are stronger than you know!",
     "Someone thought about you today and smiled! <3",
     "Don't overthink too much - you can do it!",
-    "Your wisdom is a guiding force, and there are people taking your advice that you don't even know about.",
-    "Someone looked at you today and thought you were very cool."
+    "There are people taking your advice that you don't even know about.",
+    "Someone looked at you today and thought you were really cool."
 ];
 
 
